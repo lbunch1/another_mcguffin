@@ -22,23 +22,17 @@ main {
     background-color: var(--bgcolor-1);
 }
 
-.section:nth-child(even) {
+/* .section:nth-child(even) {
     background-color: var(--bgcolor-2);
-}
+} */
 
 .s2 {
     margin:0;
     padding:0;
-    background-image: url("images/AM_splash_1.webp");
-    background-repeat: no-repeat;
-    background-size:auto;
-    background-attachment:fixed;
-    background-position: center;
     box-shadow: inset 0 0 5px 1px black;
-    transform: scale(1.0);
 }
 
-/* #bg {
+#bg {
     position: fixed;
     top: 0;
     left: 0;
@@ -46,20 +40,21 @@ main {
     height: 100vh;
     z-index: -1;
     transform: scale(1.0); 
-    &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("path");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-} */
+}
+
+#bg:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/AM_splash_1.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .about {
     position:relative;
